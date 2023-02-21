@@ -3,12 +3,15 @@
 }
 .menu {
   margin: 10px;
-  width: 20% ;
-  height: 100%;
+  width: 350px ;
+  height: 832px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 6px #000000;
+  
 }
 
 .benefitStatus {
-  height: 9vh;
+  height: 90px;
   padding: 20px;
   padding-top: 0px;
   background-color: #06b4e4;
@@ -16,6 +19,7 @@
   border: 1px solid gray;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  
 }
 .benefitStatus h2 {
   height: 100%;
@@ -25,7 +29,7 @@
 }
 
 .memBenefits {
-  height: 60vh;
+  height: 700px;
   margin-top: 0px;
   padding:10px;
   border: 1px solid gray;
@@ -39,7 +43,7 @@
   max-width: 250px;
   padding-top: 2px;
   margin: 20px;
-  margin-left: 30px;
+  margin-left: 40px;
   list-style: none;
   font-size: 1.4rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

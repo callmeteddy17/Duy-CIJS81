@@ -1,16 +1,21 @@
 import React from 'react';
 
+function SetInput({ label, ...inputProps }) {
+    return (
+        <>
+            <h3>{label}</h3>
+            <input {...inputProps} />
+        </>
+    );
+}
+
 export default function Input() {
     return (
         <div className="memInfo">
-            <h3>Username</h3>
-            <input></input>
-            <h3>Password (4 characters minimum)</h3>
-            <input type={'password'}></input>
-            <h3>Password Confirm</h3>
-            <input type={'password'}></input>
-            <h3>Email</h3>
-            <input type={'email'}></input>
+            <SetInput label="Username" type="text" />
+            <SetInput label="Password (4 characters minimum)" type="password" />
+            <SetInput label="Password Confirm" type="password" />
+            <SetInput label="Email" type="email" />
         </div>
     );
 }

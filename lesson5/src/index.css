@@ -2,17 +2,7 @@ html {
     display: flex;
     justify-content: center;
     position: relative;
-}
-
-li::first-letter {
-    text-transform: capitalize;
-}
-
-input {
-    border: 1px;
-    border-bottom: solid;
-}
-
-ul {
-    padding-left: 0px;
+    background-image: url(./assets/header-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }

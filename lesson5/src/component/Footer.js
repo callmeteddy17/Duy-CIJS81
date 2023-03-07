@@ -8,7 +8,7 @@ function Footer() {
             <div className="footer">
                 <div className="footer-info">
                     <div className="main-footer1 main-footer">
-                        <img src={logo} />
+                        <img src={logo} alt="logo" />
                         <p>
                             Hệ thống ngân hàng xuyên quốc gia đáng tin cậy. Dẫn đầu trong danh sách các ngân hàng được
                             người dùng bình chọn và được tin dùng bởi hàng triệu người dùng ở hầu hết các quốc gia trên

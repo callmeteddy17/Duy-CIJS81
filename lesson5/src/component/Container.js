@@ -34,22 +34,24 @@ const containerInfo = [
 
 function Container() {
     return (
-        <div className="container">
-            {containerInfo.map((info, index) => {
-                return (
-                    <div className="box" key={index}>
-                        <h3 className="title" key={info.id}>
-                            {info.tille}
-                        </h3>
-                        <div className="dis" key={info.tille}>
-                            {info.dis}
+        <div className="main-container">
+            <div className="container">
+                {containerInfo.map((info, index) => {
+                    return (
+                        <div className="box" key={index}>
+                            <h3 className="title" key={info.id}>
+                                {info.tille}
+                            </h3>
+                            <div className="dis" key={info.tille}>
+                                {info.dis}
+                            </div>
+                            <div className="learn-more" key={info.link}>
+                                Xem Thêm
+                            </div>
                         </div>
-                        <div className="learn-more" key={info.link}>
-                            Xem Thêm
-                        </div>
-                    </div>
-                );
-            })}
+                    );
+                })}
+            </div>
         </div>
     );
 }

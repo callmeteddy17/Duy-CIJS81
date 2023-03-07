@@ -1,8 +1,9 @@
 html {
+    margin: 0px;
     display: flex;
     justify-content: center;
-    position: relative;
     background-image: url(./assets/header-banner.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: 50%;
 }

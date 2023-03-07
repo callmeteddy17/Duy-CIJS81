@@ -37,7 +37,25 @@
     width: 63px;
     cursor: pointer;
 }
-.start-to-use:hover {
-    transition: 0.5s linear 0.5s;
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+@media screen and (min-width: 1025px) {
+    .start-to-use:hover {
+        transition: 0.5s linear 0.5s;
+        background: linear-gradient(135deg, #23bdb8, #43e794);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-box {
+        margin-top: 10vh;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }
+    .main-box p {
+        margin: auto;
+        width: 60%;
+    }
+    .start-to-use {
+        margin: auto;
+    }
 }

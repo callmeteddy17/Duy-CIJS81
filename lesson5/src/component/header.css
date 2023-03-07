@@ -1,6 +1,6 @@
 .menu-header {
     display: flex;
-    height: 5vh;
+    height: 7vh;
     width: 100vw;
     justify-content: space-between;
 }
@@ -26,9 +26,19 @@
     transition: 0.1s linear 0.1s;
 }
 
+.menu p {
+    margin-top: 3vh;
+}
 .menu:hover {
     color: red;
     transition: 0.1s linear 0.1s;
 }
-
-@media();
+@media screen and (max-width: 1024px) {
+    .menu-header {
+        background-color: whitesmoke;
+        padding: 10px 0px;
+        height: max-content;
+        position: relative;
+        top: -8px;
+    }
+}

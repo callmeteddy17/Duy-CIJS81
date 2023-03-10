@@ -77,7 +77,7 @@
     }
     .nav-close svg {
         cursor: pointer;
-        height: 5vh;
+        height: 3vw;
         position: fixed;
         right: 2vh;
         top: 2vh;
@@ -166,7 +166,7 @@
 
     .nav-close svg {
         cursor: pointer;
-        height: 5vh;
+        height: 3vw;
         position: fixed;
         right: 2vh;
         top: 2vh;

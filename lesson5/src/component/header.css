@@ -1,3 +1,11 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .menu-header {
     display: flex;
     height: 7vh;
@@ -11,27 +19,40 @@
     padding: 2vh;
 }
 
-.right-menu {
-    display: flex;
-    margin-right: 13vw;
-}
+@media screen and (min-width: 1025px) {
+    .right-menu {
+        display: flex;
+        position: relative;
+        right: -5vw;
+    }
 
-.menu {
-    color: white;
-    font-family: sans-serif;
-    font-size: 1vw;
-    width: 7vw;
-    cursor: pointer;
-    text-align: center;
-    transition: 0.1s linear 0.1s;
-}
+    .menu {
+        color: white;
+        font-family: sans-serif;
+        font-size: 1vw;
+        width: 7vw;
+        cursor: pointer;
+        text-align: center;
+        transition: 0.1s linear 0.1s;
+    }
 
-.menu p {
-    margin-top: 3vh;
-}
-.menu:hover {
-    color: red;
-    transition: 0.1s linear 0.1s;
+    .menu p {
+        margin-top: 3vh;
+    }
+    .menu:hover {
+        color: red;
+        transition: 0.1s linear 0.1s;
+    }
+    .menu-bar {
+        display: none;
+        position: relative;
+    }
+    input {
+        display: none;
+    }
+    .nav-right-menu {
+        display: none;
+    }
 }
 @media screen and (max-width: 1024px) {
     .menu-header {
@@ -40,5 +61,127 @@
         height: max-content;
         position: relative;
         top: -8px;
+    }
+    .right-menu {
+        display: none;
+    }
+    .menu-bar {
+        width: 3vw;
+        height: 3vw;
+        position: relative;
+        margin: auto;
+        margin-right: 0px;
+        right: 13vw;
+        z-index: 5;
+        color: rgb(174, 174, 174);
+    }
+    .nav-close svg {
+        cursor: pointer;
+        height: 5vh;
+        position: fixed;
+        right: 2vh;
+        top: 2vh;
+    }
+    #open {
+        display: none;
+    }
+    .nav-right-menu {
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        width: 30vw;
+        padding-top: 8vh;
+        background-color: white;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+    }
+    .nav-right-menu p {
+        cursor: pointer;
+        align-items: center;
+        margin: 0;
+        padding: 5vh;
+        border-top: 1px solid gray;
+    }
+    .nav-right-menu .nav-menu:last-child {
+        border-bottom: 1px solid gray;
+    }
+    .blur-background {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.336);
+        z-index: 99;
+        animation: fadeIn linear 0.2s;
+    }
+
+    #open:checked ~ .blur-background {
+        display: block;
+    }
+    #open:checked ~ .nav-right-menu {
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width: 599px) {
+    .menu-header {
+        background-color: whitesmoke;
+        padding: 10px 0px;
+        height: max-content;
+        position: relative;
+        top: -8px;
+    }
+    .right-menu {
+        display: none;
+    }
+    .menu-bar {
+        width: 3vw;
+        height: 3vw;
+        position: relative;
+        margin: auto;
+        margin-right: 0px;
+        right: 13vw;
+        z-index: 5;
+        color: rgb(174, 174, 174);
+    }
+    #open {
+        display: none;
+    }
+    .nav-right-menu {
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 10vh;
+        background-color: white;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+    }
+
+    .nav-close svg {
+        cursor: pointer;
+        height: 5vh;
+        position: fixed;
+        right: 2vh;
+        top: 2vh;
+    }
+    .nav-right-menu p {
+        cursor: pointer;
+        align-items: center;
+        margin: 0;
+        padding: 5vh;
+        border-top: 1px solid gray;
+    }
+    .nav-right-menu .nav-menu:last-child {
+        border-bottom: 1px solid gray;
+    }
+    #open:checked ~ .nav-right-menu {
+        transform: translateX(0);
     }
 }

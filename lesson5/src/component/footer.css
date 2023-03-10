@@ -1,9 +1,9 @@
 .footer {
     margin-left: 0;
-    width: 101vw;
+    width: 100vw;
     height: 42vh;
     background-color: black;
-    position: absolute;
+    margin-top: 0;
 }
 
 .footer-info {
@@ -36,6 +36,8 @@
 .cpr {
     font-size: 1.2vh;
     margin-top: 3vh;
+    margin-bottom: 0;
+    padding-bottom: 1vh;
     text-align: center;
     color: white;
 }
@@ -46,6 +48,7 @@
 @media screen and (max-width: 1024px) {
     .footer {
         height: inherit;
+        margin-top: 10vh;
     }
     .footer-info {
         flex-wrap: wrap;
@@ -53,5 +56,11 @@
     .main-footer {
         flex: 0 0 45%;
         max-width: 45%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        padding-top: 5vh;
+        margin-top: 15vh;
     }
 }

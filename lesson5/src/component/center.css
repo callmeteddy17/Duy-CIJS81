@@ -59,3 +59,8 @@
         margin: auto;
     }
 }
+@media screen and (max-width: 600px) {
+    .main-box {
+        font-size: 40px;
+    }
+}

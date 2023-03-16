@@ -34,7 +34,8 @@
     transition: 0.5s linear 0.5s;
     position: relative;
     top: 30px;
-    width: 63px;
+    width: -moz-fit-content;
+    width: fit-content;
     cursor: pointer;
 }
 @media screen and (min-width: 1025px) {

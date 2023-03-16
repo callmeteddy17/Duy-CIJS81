@@ -1,5 +1,5 @@
 import React from 'react';
-import '../component/container.css';
+import './container.css';
 
 const containerInfo = [
     {

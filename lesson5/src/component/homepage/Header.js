@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from '../../src/assets/logo.png';
-import '../component/header.css';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';
+import './header.css';
 
 function Header() {
     const menu = [
         {
             name: 'Trang chủ',
-            link: '',
+            link: '/',
         },
         {
             name: 'Thông tin',
@@ -27,13 +28,18 @@ function Header() {
     ];
     return (
         <div className="menu-header">
-            <img src={logo} alt="/" />
+            <Link to="/">
+                <img src={logo} alt="/" />
+            </Link>
+
             <div className="right-menu">
                 {menu.map((tab, index) => {
                     return (
-                        <div key={index} className="menu">
-                            <p>{tab.name}</p>
-                        </div>
+                        <Link to={tab.link}>
+                            <div key={index} className="menu">
+                                <p>{tab.name}</p>
+                            </div>
+                        </Link>
                     );
                 })}
             </div>
@@ -53,9 +59,11 @@ function Header() {
                 </label>
                 {menu.map((tab, index) => {
                     return (
-                        <div key={index} className="nav-menu">
-                            <p>{tab.name}</p>
-                        </div>
+                        <Link to={tab.link}>
+                            <div key={index} className="nav-menu">
+                                <p>{tab.name}</p>
+                            </div>
+                        </Link>
                     );
                 })}
             </div>

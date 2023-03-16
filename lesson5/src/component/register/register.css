@@ -1,0 +1,106 @@
+.main-register {
+    background-image: url(../../assets/signup-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.register-form {
+    padding: 3%;
+    height: 80vh;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: #d9d9db86;
+    position: relative;
+    top: 5vh;
+    left: 55vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-form h2 {
+    font-size: 3vw;
+}
+
+.register-form form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box {
+    margin-bottom: 2vh;
+    height: 6vh;
+    width: 100%;
+}
+
+.input-box input {
+    width: 100%;
+    font-size: 2vh;
+    height: 5vh;
+    border: 0px;
+    border-radius: 5px;
+    border-color: #d9d9db86;
+    padding: 2vh;
+    background-color: #ffffff5b;
+    box-shadow: rgba(0, 0, 0, 0.09) 5px 5px;
+}
+
+.first-name {
+    width: 40%;
+}
+.dob {
+    width: 40%;
+}
+.phone-number {
+    width: 58%;
+}
+.last-name {
+    width: 58%;
+}
+.password {
+    width: 48%;
+}
+.password-check {
+    width: 48%;
+}
+
+.register-form form button {
+    width: 20%;
+    height: 4vh;
+    color: #3f51b5;
+    background-color: #ffffff86;
+    border: 0px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 1.4vh;
+    box-shadow: rgba(0, 0, 0, 0.09) 5px 5px;
+    cursor: pointer;
+}
+
+#registed {
+    background-color: #3f51b5;
+    color: white;
+}
+
+.main-register .menu-header {
+    background-color: aliceblue;
+}
+.main-register .menu-header p {
+    color: #3f51b5;
+}
+
+@media (max-width: 1024px) {
+    .register-form {
+        padding: 3%;
+        height: 80vh;
+        width: 90vw;
+        border-radius: 20px;
+        background-color: #ffffffe2;
+        position: relative;
+        left: 5vw;
+        top: 5vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}

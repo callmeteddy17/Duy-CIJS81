@@ -1,5 +1,6 @@
 import React from 'react';
-import '../component/center.css';
+import { Link } from 'react-router-dom';
+import './center.css';
 import Container from './Container';
 
 function Center() {
@@ -8,7 +9,9 @@ function Center() {
             <div className="main-box">
                 <h1>Thanh toán không thể đơn giản hơn</h1>
                 <p>Hệ thống ngân hàng Internet hiện đại được tạo ra dành cho bạn</p>
-                <div className="start-to-use">BẮT ĐẦU</div>
+                <Link to="/register">
+                    <div className="start-to-use">BẮT ĐẦU</div>
+                </Link>
             </div>
             <Container />
         </>

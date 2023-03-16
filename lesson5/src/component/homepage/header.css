@@ -14,9 +14,10 @@
 }
 
 .menu-header img {
-    height: 3vw;
+    height: 5vw;
     margin-left: 13vw;
     padding: 2vh;
+    z-index: 100;
 }
 
 @media screen and (min-width: 1025px) {
@@ -47,7 +48,7 @@
         display: none;
         position: relative;
     }
-    input {
+    #open {
         display: none;
     }
     .nav-right-menu {
@@ -55,6 +56,9 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    .menu-header img {
+        height: 8vh;
+    }
     .menu-header {
         background-color: whitesmoke;
         padding: 10px 0px;
@@ -127,6 +131,9 @@
     }
 }
 @media screen and (max-width: 599px) {
+    .menu-header img {
+        height: 13vw;
+    }
     .menu-header {
         background-color: whitesmoke;
         padding: 10px 0px;

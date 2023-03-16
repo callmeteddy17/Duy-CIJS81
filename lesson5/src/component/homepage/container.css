@@ -48,7 +48,11 @@
         font-size: 1vh;
     }
     .box:hover .title {
-        padding-top: 5vw;
+        padding-top: 4vw;
+    }
+    .box:hover .dis {
+        width: -moz-fit-content;
+        width: fit-content;
     }
     .box:hover .learn-more {
         font-size: 2vh;
@@ -67,6 +71,7 @@
     .container {
         flex-wrap: wrap;
         height: 50vh;
+        width: -moz-fit-content;
         width: fit-content;
         font-size: 2vh;
         border: none;
@@ -98,8 +103,8 @@
 }
 @media screen and (max-width: 600px) {
     .container {
+        height: -moz-fit-content;
         height: fit-content;
-        top: 5vw;
     }
     .main-container {
         background-color: #ffffff00;
